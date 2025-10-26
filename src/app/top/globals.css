@@ -1,0 +1,10 @@
+@tailwind utilities;
+
+/* 追加の共通スタイル */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #e0e7ff; /* indigo-100 */
+}

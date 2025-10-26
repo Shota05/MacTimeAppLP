@@ -1,0 +1,91 @@
+{
+  "senderPreflight": {
+    "LP": {
+      "heroTitle": "Pass Gmail/Yahoo sender requirements in 48 hours — header‑only.",
+      "heroSub": "We run a preflight audit for SPF/DKIM/DMARC alignment and One‑Click Unsubscribe. You send a domain + raw header, we return a PDF with exact DNS values and top‑3 fixes. This is not definitive.",
+      "cta": "Get your free header check",
+
+      "sections": {
+        "whatYouGet": "What you get",
+        "whatWeCheck": "What we check",
+        "whatWeNeed": "What we need",
+        "howItWorks": "How it works",
+        "pricing": "Pricing & guarantee",
+        "faq": "FAQ"
+      },
+
+      "get": {
+        "summary": "1‑page summary (pass/fail + top‑3 fixes)",
+        "pdf": "Detailed PDF with DNS paste values & ESP steps",
+        "recheck": "One free re‑check within 7 days"
+      },
+
+      "check": {
+        "spf": "SPF existence & lookups ≤ 10",
+        "dkim": "DKIM alignment & key length (≥1024, 2048 rec.)",
+        "dmarc": "DMARC policy & alignment (adkim/aspf, pct)",
+        "unsubscribe": "List‑Unsubscribe + List‑Unsubscribe‑Post (One‑Click)"
+      },
+
+      "need": {
+        "domain": "Sending domain (From/Return‑Path)",
+        "esp": "Your ESP (e.g., SendGrid, Klaviyo, SES)",
+        "header": "One raw header or .eml (content not required)"
+      },
+
+      "how": {
+        "submit": "Submit your domain, ESP and one raw header (no content needed).",
+        "receive": "Within 48 hours, receive a summary + detailed PDF with exact fixes.",
+        "recheck": "Apply fixes and request one free re‑check within 7 days."
+      },
+
+      "pricing": {
+        "line1": "¥19,800 / $149 per domain · 48‑hour delivery",
+        "disclaimer": "Full refund if agreed signals show no improvement (e.g., One‑Click present, auth alignment consistent). Results depend on content and reputation."
+      },
+
+      "faq": {
+        "q1": "Do you need my email content?",
+        "a1": "No. Header‑only by default. You can redact sensitive values; we only need raw headers to verify standards.",
+        "q2": "Is 48h guaranteed?",
+        "a2": "Yes for the report delivery time. Outcomes depend on sender reputation and recipient behavior. This is not definitive.",
+        "q3": "What about privacy?",
+        "a3": "We recommend header‑only. If you upload an .eml, we automatically discard the body after parsing and keep only headers."
+      }
+    },
+    "LeadForm": {
+      "title": "Request your 48‑hour preflight",
+      "success": {
+        "title": "Thanks! We’ll get back within 24–48 hours.",
+        "body": "We received your domain and header. We’ll email you next steps."
+      },
+      "errors": {
+        "required": "Please check required fields.",
+        "submitFailed": "Submission failed. Please try again.",
+        "network": "Network error. Please try again."
+      },
+      "fields": {
+        "email": { "label": "Work email", "placeholder": "name@company.com" },
+        "company": { "label": "Company", "placeholder": "Your company" },
+        "domain": { "label": "Sending domain", "placeholder": "example.com" },
+        "esp": {
+          "label": "ESP",
+          "placeholder": "SendGrid / Klaviyo / SES / etc."
+        },
+        "volume": {
+          "label": "Daily volume",
+          "lt5k": "< 5,000/day",
+          "5to20k": "5,000–20,000/day",
+          "gt20k": "> 20,000/day"
+        },
+        "header": {
+          "label": "Raw header (paste)",
+          "placeholder": "Paste the full raw header here...",
+          "help": "Content is not required. Header‑only is preferred. You may redact sensitive values."
+        }
+      },
+      "consent": "I agree to header‑only processing and GDPR‑compliant handling.",
+      "buttons": { "submit": "Send request", "submitting": "Submitting…" }
+    }
+  }
+}
