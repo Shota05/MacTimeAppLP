@@ -5,7 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { useSearchParams } from "next/navigation";
 
 export default function LeadForm() {
-  const t = useTranslations("SenderPreflight/LeadForm");
+  const t = useTranslations("senderPreflight.LeadForm");
   const locale = useLocale();
   const searchParams = useSearchParams();
 
@@ -43,7 +43,7 @@ export default function LeadForm() {
 
     try {
       setPending(true);
-      const res = await fetch("/api/lead", {
+      const res = await fetch("/api/senderPreflight/lead", {
         method: "POST",
         headers: {
           "content-type": "application/json",

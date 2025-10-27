@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import LeadForm from "@/components/senderPreflight/LeadForm";
 
 export default function Page() {
-  const t = useTranslations("SenderPreflight/LP"); // メッセージ名前空間: LP
+  const t = useTranslations("senderPreflight.LP"); // メッセージ名前空間: LP
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-16">
