@@ -42,10 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className="h-full">
-      <body
-        className={`${inter.className} min-h-full bg-gradient-to-b from-slate-50 to-white text-slate-900 antialiased dark:from-slate-950 dark:to-slate-900 dark:text-slate-100`}
-      >
+    <html className="h-full">
+      <body className={`${inter.className} min-h-full  antialiased `}>
         {children}
       </body>
       {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
