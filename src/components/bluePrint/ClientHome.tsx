@@ -7,7 +7,7 @@ import RankingList from "../../components/bluePrint/RankingList";
 import BentoFeatures from "../../components/bluePrint/BentoFeatures";
 import CTASection from "../../components/bluePrint/CTASection";
 import { blueprints } from "../../../lib/bluePrint/data/blueprints";
-import type { Copy } from "../../../lib/bluePrint/copy";
+import { Copy } from "../../../lib/bluePrint/copy";
 type HeroVariant = {
   key: "a" | "b" | "c";
   title: string;
@@ -74,7 +74,7 @@ export default function ClientHome({
         </section>
 
         {/* CTA */}
-        <CTASection copy={copy.cta} />
+        {/* <CTASection copy={copy.cta} /> */}
 
         {/* Footer */}
         <footer className="mt-12 border-t border-gray-200 py-6 text-sm text-gray-600">
